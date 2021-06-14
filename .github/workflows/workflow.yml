@@ -29,7 +29,7 @@ jobs:
           build-name: BUILD_INFO
           project-name: "REPO_NAME"
       - name: Run test
-        continue-on-error: true
+        # continue-on-error: true
         run: npm run test-prod-bstack
       - run: npm run generateMochawesome
       - name: Archive mochawesome reports
